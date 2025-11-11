@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AkifCloud</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">AC</div>
+        <nav class="nav">
+          <a href="#hero">Home</a>
+          <a href="#cards">Highlights</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#about">About</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">
+          <span class="theme-icon">☾</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section">
+        <div class="hero-emoji hero-emoji-left" aria-hidden="true">💻</div>
+        <div class="hero-emoji hero-emoji-right" aria-hidden="true">🔐</div>
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <div class="hero-social">
+              <a href="https://github.com/AK1F5" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.32 6.84 9.68.5.1.68-.23.68-.5v-1.8c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.5-1.1-1.5-.9-.64.07-.63.07-.63 1 .07 1.52 1.06 1.52 1.06.9 1.57 2.37 1.12 2.95.85.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.15-4.55-5.15 0-1.14.39-2.07 1.02-2.8-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.06a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.06 2.75-1.06.55 1.43.2 2.49.1 2.75.63.73 1.02 1.66 1.02 2.8 0 4.01-2.33 4.89-4.56 5.15.36.32.68.94.68 1.9v2.8c0 .27.18.61.69.5A10.2 10.2 0 0 0 22 12.2C22 6.58 17.52 2 12 2Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/ahanafaakif/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3 9h3.96v12H3zM9.75 9H13v1.64h.05c.45-.85 1.56-1.75 3.21-1.75 3.44 0 4.07 2.05 4.07 4.72V21H16.3v-5.44c0-1.3-.03-2.97-1.81-2.97-1.82 0-2.1 1.42-2.1 2.88V21H9.75z"
+                  />
+                </svg>
+              </a>
+              <a href="mailto:akif.ctg05@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.2l8 5.3 8-5.3V7H4Zm16 10V9.8l-8 5.3-8-5.3V17h16Z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <h1
+              class="hero-title"
+              data-text="Hey, I'm Ahanaf Akif."
+              aria-label="Hey, I'm Ahanaf Akif."
+            >
+              Hey, I'm Ahanaf Akif.
+            </h1>
+            <p class="lede">
+              Passionate about building and protecting systems through code, cybersecurity, and cloud innovation.
+            </p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#cards">See Highlights</a>
+              <a class="btn ghost resume" href="../assets/AhanafAkif_Resume.pdf" download>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 3a1 1 0 0 1 1 1v9.17l2.59-2.58a1 1 0 1 1 1.41 1.42l-4.3 4.29a1 1 0 0 1-1.4 0l-4.3-4.3a1 1 0 0 1 1.41-1.41L11 13.17V4a1 1 0 0 1 1-1Zm-7 14a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"
+                  />
+                </svg>
+                <span>My Resume</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cards" class="cards section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">EXPERIENCES</p>
+            <h2>A quick look at where I've been focusing.</h2>
+            <p class="lede"><u>Click on the cards to learn more</u></p>
+          </div>
+
+          <div class="card-row work-row">
+            <div class="category-card">
+              <p>Work</p>
+            </div>
+            <button
+              class="info-card"
+              type="button"
+              data-title="Game Development · Entrepreneurial"
+              data-subtitle="2022 - Present · Remote"
+              data-description="Built and directed Roblox game projects from concept to launch, combining creative design with data-driven decision-making to optimize gameplay balance and monetization. Led cross-functional teams through agile workflows, leveraging analytics to refine user retention strategies and deliver engaging, high-quality player experiences.
+              Blended creative design with technical execution by directing UI/UX, game systems, and community-driven features that expanded player growth and engagement.                  
+              <br /><br /><strong>Managing a team of 3 developers for a 470k+ monthly active user game.</strong>"
+              data-tags="Lua, Project Managment, Collaboration, Data Analytics, UI/UX, Quality Assurance, Documentation, Game Design, Event-Planning, 
+              Community Building, Graphic Design, Communication"
+            >
+              <div class="card-visual">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Roblox_Logo_2025.png" alt="roblox logo" />
+              </div>
+              <div class="card-copy">
+                <p class="card-title">Roblox</p>
+                <p class="card-subtitle">Entrepreneurial · Freelance</p>
+              </div>
+            </button>
+            <button
+              class="info-card"
+              type="button"
+              data-title="IT Support Specialist · Kwik Stop"
+              data-subtitle="2023-2024 · Hollywood, FL"
+              data-description="Diagnosed connectivity failures, peripheral malfunctions, and application errors operating remote desktop
+protocols and log analysis. Performed troubleshooting and issue resolution on workstations, POS devices and network hardware; flag and
+remediate malware alerts."
+              data-tags="Troubleshooting, Log Analysis, POS Systems, Issue Resolution, IT Security"
+            >
+              <div class="card-visual">KS</div>
+              <div class="card-copy">
+                <p class="card-title">Kwik Stop</p>
+                <p class="card-subtitle">IT Support Specialist</p>
+              </div>
+            </button>
+            
+          </div>
+
+          <hr class="card-divider" />
+
+          <div class="card-row school-row">
+            <div class="category-card">
+              <p>School</p>
+            </div>
+            <button
+              class="info-card"
+              type="button"
+              data-title="Florida International University · BSc Computer Science"
+              data-subtitle="Expected Graduation: May 2027"
+              data-description="Focused on human-computer interaction and intelligent systems. Led the design systems guild and mentored two capstone teams."
+              data-tags="HCI,Leadership,Capstone"
+            >
+              <div class="card-visual">
+                <img src="../assets/blob.png" alt="Abstract gradient accent" />
+              </div>
+              <div class="card-copy">
+                <p class="card-title"><strong>Florida International University (FIU)</strong></p>
+                <p class="card-subtitle">BSc Computer Science</p>
+              </div>
+            </button>
+        
+          </div>
+
+          <hr class="card-divider" />
+
+          <div class="card-row projects-row">
+            <div class="category-card">
+              <p>Projects</p>
+            </div>
+            <button
+              class="info-card"
+              type="button"
+              data-title="Pulse Analytics Platform"
+              data-subtitle="Lead Product Engineer"
+              data-description="Launched a HIPAA-ready analytics suite with configurable cohorts and real-time alerting for care teams."
+              data-tags="Next.js,TypeScript,Healthcare"
+            >
+              <div class="card-visual">PA</div>
+              <div class="card-copy">
+                <p class="card-title">Pulse Analytics</p>
+                <p class="card-subtitle">Healthcare SaaS</p>
+              </div>
+            </button>
+            <button
+              class="info-card"
+              type="button"
+              data-title="Lumen Studio Launch"
+              data-subtitle="Product Designer · Dev"
+              data-description="Partnered with a creative studio to ship a CMS-powered marketing site with motion studies and story-driven funnels."
+              data-tags="Remix,GSAP,Sanity"
+            >
+              <div class="card-visual">LS</div>
+              <div class="card-copy">
+                <p class="card-title">Lumen Studio</p>
+                <p class="card-subtitle">Brand Experience</p>
+              </div>
+            </button>
+            <button
+              class="info-card"
+              type="button"
+              data-title="Atlas Ops Dashboard"
+              data-subtitle="Product Engineer"
+              data-description="Redesigned operations tooling with modular widgets, custom charts, and offline-first syncing."
+              data-tags="React,Node.js,Data Viz"
+            >
+              <div class="card-visual">AO</div>
+              <div class="card-copy">
+                <p class="card-title">Atlas Ops</p>
+                <p class="card-subtitle">Internal Platform</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="cards section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">⭐</p>
+            <h2>Certifications</h2>
+            <p class="lede">Verified badges that pair well with hands-on product work.</p>
+          </div>
+
+          <div class="card-row cert-row">
+            <button
+              class="info-card"
+              type="button"
+              data-title="Microsoft SC-900"
+              data-subtitle="Issued Sep · 2025"
+              data-description="Built a foundation in Microsoft’s security and identity principles, focusing on how organizations protect and govern cloud resources through Azure and Microsoft 365. Learned how to apply zero-trust concepts, manage access and compliance, and use cloud-based security tools to reduce risk and ensure trust at scale."
+              data-tags="Azure, IAM, Network Security, Compliance + GRC, Defense-in-Depth"
+            >
+              <div class="card-visual">
+                <img src="../assets/Microsoft_logo.svg.png" alt="Abstract gradient accent" />
+              </div>
+              <div class="card-copy">
+                <p class="card-title">Microsoft SC-900: Security, Compliance & Identity</p>
+                <a class="credential-link" href="https://drive.google.com/file/d/1sRPYFzWZwBGR-laRg7hv8vHxNBH7CiR0/view" target="_blank" rel="noreferrer">
+                  Show credential
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </button>
+            <button
+              class="info-card"
+              type="button"
+              data-title="AWS Solutions Architect Associate"
+              data-subtitle="Issued 2023 · Amazon Web Services"
+              data-description="Validated ability to design resilient, cost-optimized architectures and lead migrations for growth-stage clients."
+              data-tags="Solutions Architecture,Well-Architected,AWS"
+            >
+              <div class="card-visual">
+                <img src="https://trainingcamp.com/wp-content/uploads/2024/11/securityplus-1-1.png" alt="Abstract gradient accent" />
+              </div>
+              <div class="card-copy">
+                <p class="card-title">CompTIA Security+ (TBA)</p>
+                <a class="credential-link" href="https://CompTIA.com" target="_blank" rel="noreferrer">
+                  Expected Dec. 2026
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section">
+        <div class="container">
+          <div class="about-card">
+            <div class="about-emoji about-emoji-left" aria-hidden="true">👋</div>
+            <div>
+              <p class="eyebrow">About me</p>
+              <h2>Curious technologist with a playful streak.</h2>
+              <p>
+                I love blending product thinking, security, and game design to craft delightful experiences.
+                Whether I’m iterating on a new Roblox mechanic or hardening cloud infrastructure, I’m happiest when shipping things that people enjoy.
+              </p>
+              <p>
+                Outside of code, you’ll find me exploring Miami coffee shops, sketching interface ideas, or planning the next in-game event for our community.
+              </p>
+            </div>
+            <div class="fun-facts">
+              <h3>Fun facts</h3>
+              <ul>
+                <li>Built a Roblox game that hit <strong>470k+ monthly players</strong>.</li>
+                <li>Once turned a retro Game Boy shell into a password manager prototype.</li>
+                <li>Can identify Miami cafés purely by latte art patterns.</li>
+                <li>Keep a running playlist of synthwave tracks for late-night coding.</li>
+              </ul>
+            </div>
+            <div class="about-emoji about-emoji-right" aria-hidden="true">✌️</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Akif A. All rights reserved.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/ahanafaakif/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/AK1F5" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="mailto:akif.ctg05@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="card-modal" aria-hidden="true">
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Close dialog">×</button>
+        <h3 id="modal-title"></h3>
+        <p id="modal-subtitle" class="modal-subtitle"></p>
+        <p id="modal-body" class="modal-body"></p>
+        <ul class="modal-tags"></ul>
+      </div>
+    </div>
+
+    <script>
+      const themeToggle = document.querySelector(".theme-toggle");
+      const themeIcon = document.querySelector(".theme-icon");
+      const infoCards = document.querySelectorAll(".info-card");
+      const modal = document.getElementById("card-modal");
+      const modalTitle = document.getElementById("modal-title");
+      const modalSubtitle = document.getElementById("modal-subtitle");
+      const modalBody = document.getElementById("modal-body");
+      const modalTags = document.querySelector(".modal-tags");
+      const modalClose = document.querySelector(".modal-close");
+      const body = document.body;
+      let lastFocusedElement = null;
+      const heroTitle = document.querySelector(".hero-title");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      let typingTimeout;
+      const heroEmojis = document.querySelectorAll(".hero-emoji");
+
+      const setTheme = (mode) => {
+        body.dataset.theme = mode;
+        themeIcon.textContent = mode === "dark" ? "☼" : "☾";
+      };
+
+      setTheme("light");
+
+      themeToggle.addEventListener("click", () => {
+        const nextTheme = body.dataset.theme === "light" ? "dark" : "light";
+        setTheme(nextTheme);
+      });
+
+      const openModal = (card) => {
+        lastFocusedElement = card;
+        modalTitle.textContent = card.dataset.title;
+        modalSubtitle.textContent = card.dataset.subtitle;
+        const description = card.dataset.description || "";
+        modalBody.innerHTML = description.replace(/\n\s*/g, "<br />");
+        modalTags.innerHTML = "";
+        const tags = card.dataset.tags ? card.dataset.tags.split(",") : [];
+        tags.forEach((tag) => {
+          const li = document.createElement("li");
+          li.textContent = tag.trim();
+          modalTags.appendChild(li);
+        });
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+        body.style.overflow = "hidden";
+        modalClose.focus();
+      };
+
+      const closeModal = () => {
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+        body.style.overflow = "";
+        if (lastFocusedElement) {
+          lastFocusedElement.focus();
+        }
+      };
+
+      infoCards.forEach((card) => {
+        card.addEventListener("click", () => openModal(card));
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openModal(card);
+          }
+        });
+      });
+
+      modalClose.addEventListener("click", closeModal);
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && modal.classList.contains("open")) {
+          closeModal();
+        }
+      });
+
+      const runTypewriter = () => {
+        if (!heroTitle) return;
+        const fullText = heroTitle.dataset.text || heroTitle.textContent.trim();
+        clearTimeout(typingTimeout);
+        if (reduceMotion.matches) {
+          heroTitle.textContent = fullText;
+          heroTitle.dataset.typing = "false";
+          return;
+        }
+        heroTitle.dataset.typing = "true";
+        heroTitle.textContent = "";
+        let index = 0;
+
+        const typeChar = () => {
+          if (index <= fullText.length) {
+            heroTitle.textContent = fullText.slice(0, index);
+            index += 1;
+            typingTimeout = setTimeout(typeChar, 75);
+          } else {
+            heroTitle.dataset.typing = "false";
+          }
+        };
+
+        typeChar();
+      };
+
+      runTypewriter();
+      reduceMotion.addEventListener("change", runTypewriter);
+
+      const heroEmojiOptions = ["💻", "🔐", "🛡️", "🧑‍💻", "⚙️", "📡", "🛰️", "🕹️", "🧠", "📱"];
+      const seedHeroEmojis = () => {
+        if (!heroEmojis.length) return;
+        const pool = [...heroEmojiOptions];
+
+        const pickEmoji = () => {
+          if (!pool.length) pool.push(...heroEmojiOptions);
+          const index = Math.floor(Math.random() * pool.length);
+          return pool.splice(index, 1)[0];
+        };
+
+        heroEmojis.forEach((el, index) => {
+          el.textContent = pickEmoji();
+          if (index === 0) {
+            el.style.left = "16%";
+            el.style.top = "19%";
+          } else {
+            el.style.right = "12%";
+            el.style.bottom = "28%";
+          }
+        });
+      };
+
+      seedHeroEmojis();
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

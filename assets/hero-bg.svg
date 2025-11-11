@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900">
+  <defs>
+    <radialGradient id="glow" cx="55%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#ffd27d" />
+      <stop offset="45%" stop-color="#ffb347" />
+      <stop offset="70%" stop-color="#ff8a21" />
+      <stop offset="100%" stop-color="#b8c0c8" />
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#glow)" />
+</svg>
