@@ -4,14 +4,17 @@
   "private": true,
   "description": "Tooling to lint and bundle the Akif portfolio site.",
   "scripts": {
-    "lint": "node scripts/lint.mjs",
-    "lint:html": "node scripts/lint.mjs --scope html",
-    "lint:css": "node scripts/lint.mjs --scope css",
-    "lint:js": "node scripts/lint.mjs --scope js",
+    "lint": "akif-lint",
+    "lint:html": "akif-lint --scope html",
+    "lint:css": "akif-lint --scope css",
+    "lint:js": "akif-lint --scope js",
     "test": "npm run lint",
-    "build": "node scripts/build.mjs"
+    "build": "akif-build"
   },
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "@akif-portfolio/tooling": "file:./scripts"
   }
 }

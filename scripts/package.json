@@ -1,0 +1,9 @@
+{
+  "name": "@akif-portfolio/tooling",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "akif-lint": "./lint.mjs",
+    "akif-build": "./build.mjs"
+  }
+}
