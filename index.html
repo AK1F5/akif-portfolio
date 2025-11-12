@@ -16,11 +16,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="index.js"></script>
   </head>
   <body data-theme="light">
     <header class="site-header">
       <div class="container">
-        <div class="logo">AC</div>
+        <div class="weather-widget" id="weather-widget" aria-live="polite">
+          Loading Miami weather…
+        </div>
         <nav class="nav">
           <a href="#hero">Home</a>
           <a href="#cards">Highlights</a>
@@ -39,6 +42,13 @@
         <div class="hero-emoji hero-emoji-right" aria-hidden="true">🔐</div>
         <div class="container hero-grid">
           <div class="hero-text">
+            <div class="hero-avatar">
+              <img
+                src="../assets/1694401239106.jpg"
+                alt="Portrait of Akif A."
+                loading="lazy"
+              />
+            </div>
             <div class="hero-social">
               <a href="https://github.com/AK1F5" target="_blank" rel="noreferrer" aria-label="GitHub">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -148,11 +158,11 @@ remediate malware alerts."
               type="button"
               data-title="Florida International University · BSc Computer Science"
               data-subtitle="Expected Graduation: May 2027"
-              data-description="Focused on human-computer interaction and intelligent systems. Led the design systems guild and mentored two capstone teams."
-              data-tags="HCI,Leadership,Capstone"
+              data-description="Bachelor of Science in Computer Science | GPA: 3.6/4.0 | Relevant Coursework: Data Structures & Algorithms, Operating Systems, Database Management, Digital Forensics, Programming I-II, Calculus 2"
+              data-tags="Florida Bright Futures, Merit Scholarship, Dean's List"
             >
               <div class="card-visual">
-                <img src="../assets/blob.png" alt="Abstract gradient accent" />
+                <img src="https://yt3.googleusercontent.com/dteVWXZcde9FuRJ5A5h-5MmgTW_7DeaL5lZUWEhCPNmLCjeiIGzUmMLJ-ODvAQdy4DkZDhBA6Gs=s900-c-k-c0x00ffffff-no-rj" alt="fiu" />
               </div>
               <div class="card-copy">
                 <p class="card-title"><strong>Florida International University (FIU)</strong></p>
@@ -171,45 +181,80 @@ remediate malware alerts."
             <button
               class="info-card"
               type="button"
-              data-title="Pulse Analytics Platform"
-              data-subtitle="Lead Product Engineer"
-              data-description="Launched a HIPAA-ready analytics suite with configurable cohorts and real-time alerting for care teams."
-              data-tags="Next.js,TypeScript,Healthcare"
+              data-title="Next Wave · AI Career Pathway Platform"
+              data-subtitle="2025 · Miami Dade College · Hackathon Project"
+              data-description="Built an AI-powered platform that generates personalized academic and career pathways for students—turning complex degree and certification data into clear, interactive roadmaps from community college to professional licensing.
+
+                Developed with a modern full-stack setup (React + TypeScript + Vite, Flask on AWS Lambda) and AI-driven data analysis, focusing on clean UX, responsive design, and accurate educational insights.
+                <br /><br /><strong>🥇 1st Place — MDC Career Roadmap Challenge
+
+            🥇 1st Place — Best Use of Digital Ocean (AI Assistant Integration)
+            https://devpost.com/software/next-wave"  
+            data-tags="React, Flask, AWS Lambda, Vite, Google API, Web Scraping, Vite, DynamoDB, S3, Tailwind CSS"   
+            style="--project-banner: url('assets/hackathon.png')"
             >
-              <div class="card-visual">PA</div>
-              <div class="card-copy">
-                <p class="card-title">Pulse Analytics</p>
-                <p class="card-subtitle">Healthcare SaaS</p>
+              <div class="card-visual">
+                <img src="assets/Screenshot%202025-11-11%20203837.png" alt="Project banner" />
               </div>
+              <div class="card-copy">
+                <p class="card-title">Next Wave · AI Career Pathway Platform</p>
+                <p class="card-subtitle">MDC Hackathon (#1)</p>
+              </div>
+              <a class="card-link" href="https://devpost.com/software/next-wave" target="_blank" rel="noreferrer" aria-label="View project link">
+                <span>↗</span>
+              </a>
             </button>
             <button
               class="info-card"
               type="button"
-              data-title="Lumen Studio Launch"
-              data-subtitle="Product Designer · Dev"
-              data-description="Partnered with a creative studio to ship a CMS-powered marketing site with motion studies and story-driven funnels."
-              data-tags="Remix,GSAP,Sanity"
+              data-title="IAM Security Misconfig. Dashboard"
+              data-subtitle="FIU INIT Build Member · 2025"
+              data-description="Collaborated with a team of 6+ to develop an IAM Security Dashboard to automate detection of AWS complaince risks using OPA, Checkov, Gitleaks within Github Action workflows.
+              Managed DevSecOps environment using Docker & Terraform to automate deployment of the dashboard on AWS, leveraging S3 for storage and Lambda for serverless execution. Established secure foundation for CI/CD pipelines and consistent team testing."
+              data-tags="AWS, S3, Lambda, DynamoDB, CloudWatch, Terraform, Docker, OPA, Checkov, Gitleaks, GitHub Actions"
+              style="--project-banner: url('assets/securityiam.png')"
             >
-              <div class="card-visual">LS</div>
-              <div class="card-copy">
-                <p class="card-title">Lumen Studio</p>
-                <p class="card-subtitle">Brand Experience</p>
+              <div class="card-visual">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e8300a89-e3c1-43db-b1fc-a0fa784f5d48-profile_image-300x300.png" alt="init fiu">
               </div>
+              <div class="card-copy">
+                <p class="card-title">IAM Security Misconfig. Dashboard</p>
+                <p class="card-subtitle">INIT Build</p>
+              </div>
+              <a class="card-link" href="http://iam-dashboard-project.s3-website-us-east-1.amazonaws.com/" target="_blank" rel="noreferrer" aria-label="View project link">
+                <span>↗</span>
+              </a>
             </button>
             <button
               class="info-card"
               type="button"
-              data-title="Atlas Ops Dashboard"
-              data-subtitle="Product Engineer"
+              data-title="AWS GuardDuty Threat Detection"
+              data-subtitle="Triage Engineering Project · 2025"
+              data-description="Deployed OWASP demo web app via CloudFormation for security vulnerability & detection testing.
+              Implemented GuardDuty (with S3 Malware Protection); simulated SQLi + command-injection; triaged
+findings using CloudTrail; Hardened IAM with least-privilege policies and S3 controls."
+              data-tags="AWS, CloudFormation, GuardDuty, S3, IAM, Security, Triage, JS"
+              style="--project-banner: url('https://soyacincau.com/wp-content/uploads/2023/03/230302-AWS-services.jpg')"
+      data-subtitle="Product Engineer"
               data-description="Redesigned operations tooling with modular widgets, custom charts, and offline-first syncing."
               data-tags="React,Node.js,Data Viz"
+gs="React,Node.js,Data Viz"
+gs="React,Node.js,Data Viz"
+gs="React,Node.js,Data Viz"
+ags="React,Node.js,Data Viz"
             >
-              <div class="card-visual">AO</div>
-              <div class="card-copy">
-                <p class="card-title">Atlas Ops</p>
-                <p class="card-subtitle">Internal Platform</p>
+              <div class="card-visual">
+                <img src="https://dt-cdn.net/hub/AWS_GuardDuty_logo.png" alt="guarduty">
               </div>
+              <div class="card-copy">
+                <p class="card-title">AWS Threat Detection Project</p>
+                <p class="card-subtitle">AWS GuardDuty</p>
+              </div>
+              <a class="card-link" href="https://aws.amazon.com/guardduty/" target="_blank" rel="noreferrer" aria-label="View project link">
+                <span>↗</span>
+              </a>
             </button>
+            
           </div>
         </div>
       </section>
@@ -217,7 +262,7 @@ remediate malware alerts."
       <section id="certifications" class="cards section">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">⭐</p>
+            <p class="eyebrow eyebrow-star" aria-hidden="true">⭐</p>
             <h2>Certifications</h2>
             <p class="lede">Verified badges that pair well with hands-on product work.</p>
           </div>
@@ -264,10 +309,10 @@ remediate malware alerts."
             <button
               class="info-card"
               type="button"
-              data-title="AWS Solutions Architect Associate"
-              data-subtitle="Issued 2023 · Amazon Web Services"
-              data-description="Validated ability to design resilient, cost-optimized architectures and lead migrations for growth-stage clients."
-              data-tags="Solutions Architecture,Well-Architected,AWS"
+              data-title="CompTIA Security+ (TBA)"
+              data-subtitle="Actively Studying · Expected Dec 2026"
+              data-description="Preparing for the CompTIA Security+ certification to validate foundational cybersecurity skills, including risk management, threat analysis, and security architecture. Focused on mastering concepts like network security, identity management, and cryptography to enhance my ability to protect and defend organizational assets in a rapidly evolving threat landscape."
+              data-tags="Cybersecurity, Risk Management, Threat Analysis, Network Security, Identity Management, Cryptography"
             >
               <div class="card-visual">
                 <img src="https://trainingcamp.com/wp-content/uploads/2024/11/securityplus-1-1.png" alt="Abstract gradient accent" />
@@ -292,20 +337,20 @@ remediate malware alerts."
               <p class="eyebrow">About me</p>
               <h2>Curious technologist with a playful streak.</h2>
               <p>
-                I love blending product thinking, security, and game design to craft delightful experiences.
-                Whether I’m iterating on a new Roblox mechanic or hardening cloud infrastructure, I’m happiest when shipping things that people enjoy.
+                I love to build things that people enjoy using.
+                Whether I’m iterating on a new Roblox feature or hardening cloud infrastructure, I’m happiest when shipping things that people enjoy.
               </p>
               <p>
-                Outside of code, you’ll find me exploring Miami coffee shops, sketching interface ideas, or planning the next in-game event for our community.
+                Outside of code, you’ll find me exploring attractions (like theme parks), drinking coffee, or hanging out with friends playing basketball.
               </p>
             </div>
             <div class="fun-facts">
               <h3>Fun facts</h3>
               <ul>
                 <li>Built a Roblox game that hit <strong>470k+ monthly players</strong>.</li>
-                <li>Once turned a retro Game Boy shell into a password manager prototype.</li>
-                <li>Can identify Miami cafés purely by latte art patterns.</li>
-                <li>Keep a running playlist of synthwave tracks for late-night coding.</li>
+                <li>I was born in Chittagong, Bangladesh</li>
+                <li>Some of my favorite hobbies are video games, movies, and traveling.</li>
+                <li>I love learning about finance and making smart investment strategies.</li>
               </ul>
             </div>
             <div class="about-emoji about-emoji-right" aria-hidden="true">✌️</div>
@@ -335,141 +380,5 @@ remediate malware alerts."
       </div>
     </div>
 
-    <script>
-      const themeToggle = document.querySelector(".theme-toggle");
-      const themeIcon = document.querySelector(".theme-icon");
-      const infoCards = document.querySelectorAll(".info-card");
-      const modal = document.getElementById("card-modal");
-      const modalTitle = document.getElementById("modal-title");
-      const modalSubtitle = document.getElementById("modal-subtitle");
-      const modalBody = document.getElementById("modal-body");
-      const modalTags = document.querySelector(".modal-tags");
-      const modalClose = document.querySelector(".modal-close");
-      const body = document.body;
-      let lastFocusedElement = null;
-      const heroTitle = document.querySelector(".hero-title");
-      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-      let typingTimeout;
-      const heroEmojis = document.querySelectorAll(".hero-emoji");
-
-      const setTheme = (mode) => {
-        body.dataset.theme = mode;
-        themeIcon.textContent = mode === "dark" ? "☼" : "☾";
-      };
-
-      setTheme("light");
-
-      themeToggle.addEventListener("click", () => {
-        const nextTheme = body.dataset.theme === "light" ? "dark" : "light";
-        setTheme(nextTheme);
-      });
-
-      const openModal = (card) => {
-        lastFocusedElement = card;
-        modalTitle.textContent = card.dataset.title;
-        modalSubtitle.textContent = card.dataset.subtitle;
-        const description = card.dataset.description || "";
-        modalBody.innerHTML = description.replace(/\n\s*/g, "<br />");
-        modalTags.innerHTML = "";
-        const tags = card.dataset.tags ? card.dataset.tags.split(",") : [];
-        tags.forEach((tag) => {
-          const li = document.createElement("li");
-          li.textContent = tag.trim();
-          modalTags.appendChild(li);
-        });
-        modal.classList.add("open");
-        modal.setAttribute("aria-hidden", "false");
-        body.style.overflow = "hidden";
-        modalClose.focus();
-      };
-
-      const closeModal = () => {
-        modal.classList.remove("open");
-        modal.setAttribute("aria-hidden", "true");
-        body.style.overflow = "";
-        if (lastFocusedElement) {
-          lastFocusedElement.focus();
-        }
-      };
-
-      infoCards.forEach((card) => {
-        card.addEventListener("click", () => openModal(card));
-        card.addEventListener("keydown", (event) => {
-          if (event.key === "Enter" || event.key === " ") {
-            event.preventDefault();
-            openModal(card);
-          }
-        });
-      });
-
-      modalClose.addEventListener("click", closeModal);
-      modal.addEventListener("click", (event) => {
-        if (event.target === modal) {
-          closeModal();
-        }
-      });
-
-      window.addEventListener("keydown", (event) => {
-        if (event.key === "Escape" && modal.classList.contains("open")) {
-          closeModal();
-        }
-      });
-
-      const runTypewriter = () => {
-        if (!heroTitle) return;
-        const fullText = heroTitle.dataset.text || heroTitle.textContent.trim();
-        clearTimeout(typingTimeout);
-        if (reduceMotion.matches) {
-          heroTitle.textContent = fullText;
-          heroTitle.dataset.typing = "false";
-          return;
-        }
-        heroTitle.dataset.typing = "true";
-        heroTitle.textContent = "";
-        let index = 0;
-
-        const typeChar = () => {
-          if (index <= fullText.length) {
-            heroTitle.textContent = fullText.slice(0, index);
-            index += 1;
-            typingTimeout = setTimeout(typeChar, 75);
-          } else {
-            heroTitle.dataset.typing = "false";
-          }
-        };
-
-        typeChar();
-      };
-
-      runTypewriter();
-      reduceMotion.addEventListener("change", runTypewriter);
-
-      const heroEmojiOptions = ["💻", "🔐", "🛡️", "🧑‍💻", "⚙️", "📡", "🛰️", "🕹️", "🧠", "📱"];
-      const seedHeroEmojis = () => {
-        if (!heroEmojis.length) return;
-        const pool = [...heroEmojiOptions];
-
-        const pickEmoji = () => {
-          if (!pool.length) pool.push(...heroEmojiOptions);
-          const index = Math.floor(Math.random() * pool.length);
-          return pool.splice(index, 1)[0];
-        };
-
-        heroEmojis.forEach((el, index) => {
-          el.textContent = pickEmoji();
-          if (index === 0) {
-            el.style.left = "16%";
-            el.style.top = "19%";
-          } else {
-            el.style.right = "12%";
-            el.style.bottom = "28%";
-          }
-        });
-      };
-
-      seedHeroEmojis();
-
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
