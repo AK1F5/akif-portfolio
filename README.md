@@ -1,3 +1,3 @@
-🌐 Live Website: https://akif-portfolio.s3.us-east-1.amazonaws.com/index.html
+🌐 Live Website: akifcloud.com
 
-Thanks for visiting, this website was architected and deployed on AWS.
+Thanks for visiting, this website was architected and deployed on AWS (S3 + CloudFront + Route53)
