@@ -26,6 +26,7 @@
         </div>
         <nav class="nav">
           <a href="#hero">Home</a>
+          <a href="#skills">Skills</a>
           <a href="#cards">Highlights</a>
           <a href="#certifications">Certifications</a>
           <a href="#about">About</a>
@@ -97,6 +98,55 @@
         </div>
       </section>
 
+      <section id="skills" class="skills section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">TECH STACK</p>
+            <h2>Skills & Technologies</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3 class="skill-group-title">Languages</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill">C/C++</span>
+                <span class="skill-pill">SQL</span>
+                <span class="skill-pill">HTML/CSS</span>
+                <span class="skill-pill">PowerShell</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group-title">Infrastructure & Cloud</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">AWS</span>
+                <span class="skill-pill">EC2</span>
+                <span class="skill-pill">S3</span>
+                <span class="skill-pill">VPC</span>
+                <span class="skill-pill">Lambda</span>
+                <span class="skill-pill">IAM</span>
+                <span class="skill-pill">Docker</span>
+                <span class="skill-pill">Terraform</span>
+                <span class="skill-pill">CI/CD</span>
+                <span class="skill-pill">Git</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group-title">Security & Forensics</h3>
+              <div class="skill-pills">
+                <span class="skill-pill">Network Security</span>
+                <span class="skill-pill">Splunk</span>
+                <span class="skill-pill">SIEM</span>
+                <span class="skill-pill">Wireshark</span>
+                <span class="skill-pill">Digital Forensics</span>
+                <span class="skill-pill">Azure (SC900)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="cards" class="cards section">
         <div class="container">
           <div class="section-heading">
@@ -109,6 +159,42 @@
             <div class="category-card">
               <p>Work</p>
             </div>
+            <button
+              class="info-card"
+              type="button"
+              data-title="AWS Cloud Club @ FIU · Technical Lead"
+              data-subtitle="Nov. 2025 – Present · Miami, FL"
+              data-description="Led technical workshops for 20+ students on AWS cloud infrastructure and services, teaching best practices for provisioning VPCs, EC2 instances, and network security groups.
+              <br /><br />Mentored peers on troubleshooting &amp; operations, resolving deployment errors and enforcing strict IAM security policies in hands-on labs.
+              <br /><br />Developed technical curriculum and presentations, boosting engagement and understanding of AWS concepts."
+              data-tags="AWS, EC2, VPC, IAM, Cloud Infrastructure, Technical Leadership, Mentoring"
+            >
+              <div class="card-visual">
+                <img src="https://d1.awsstatic.com/logos/aws-logo-lockups/poweredbyaws/PB_AWS_logo_RGB_REV_SQ.8c88ac215fe4e441dc42865dd6962ed4f444a90d.png" alt="AWS Cloud Club logo" />
+              </div>
+              <div class="card-copy">
+                <p class="card-title">AWS Cloud Club @ FIU</p>
+                <p class="card-subtitle">Technical Lead</p>
+              </div>
+            </button>
+            <button
+              class="info-card"
+              type="button"
+              data-title="INIT Build @ FIU · DevOps Co-Lead"
+              data-subtitle="Sep. 2025 – Present · Miami, FL"
+              data-description="Co-led DevOps for a 16-contributor IAM Misconfiguration Dashboard, orchestrating multi-container environments with Docker Compose and reducing developer onboarding time by 60% with one-command setup.
+              <br /><br />Provisioned AWS infrastructure as code with Terraform (Lambda, DynamoDB, S3, API Gateway, OIDC), securing CI/CD deployments via GitHub Actions and enforcing least-privilege IAM policies.
+              <br /><br />Implemented DevSecOps scanning pipeline (OPA, Checkov, Gitleaks) with Makefile automation and integrated Grafana + Prometheus monitoring, cutting manual security review time by 35%."
+              data-tags="Docker, Terraform, AWS Lambda, DynamoDB, GitHub Actions, OPA, Checkov, Gitleaks, Grafana, Prometheus"
+            >
+              <div class="card-visual">
+                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e8300a89-e3c1-43db-b1fc-a0fa784f5d48-profile_image-300x300.png" alt="INIT FIU logo" />
+              </div>
+              <div class="card-copy">
+                <p class="card-title">INIT Build @ FIU</p>
+                <p class="card-subtitle">DevOps Co-Lead</p>
+              </div>
+            </button>
             <button
               class="info-card"
               type="button"
@@ -158,7 +244,7 @@ remediate malware alerts."
               type="button"
               data-title="Florida International University · BSc Computer Science"
               data-subtitle="Expected Graduation: May 2027"
-              data-description="Bachelor of Science in Computer Science | GPA: 3.6/4.0 | Relevant Coursework: Data Structures & Algorithms, Operating Systems, Database Management, Digital Forensics, Programming I-II, Calculus 2"
+              data-description="Bachelor of Science in Computer Science | GPA: 3.5/4.0 | Relevant Coursework: Operating Systems, Database Management, Digital Forensics, Programming I-II"
               data-tags="Florida Bright Futures, Merit Scholarship, Dean's List"
             >
               <div class="card-visual">
@@ -190,7 +276,7 @@ remediate malware alerts."
 
             🥇 1st Place — Best Use of Digital Ocean (AI Assistant Integration)
             https://devpost.com/software/next-wave"  
-            data-tags="React, Flask, AWS Lambda, Vite, Google API, Web Scraping, Vite, DynamoDB, S3, Tailwind CSS"   
+            data-tags="React, TypeScript, Tailwind, AWS Lambda, API Gateway, DynamoDB, Google Gemini, S3, CloudFront"   
             style="--project-banner: url('assets/hackathon.png')"
             >
               <div class="card-visual">
@@ -207,11 +293,12 @@ remediate malware alerts."
             <button
               class="info-card"
               type="button"
-              data-title="IAM Security Misconfig. Dashboard"
-              data-subtitle="FIU INIT Build Member · 2025"
-              data-description="Collaborated with a team of 6+ to develop an IAM Security Dashboard to automate detection of AWS complaince risks using OPA, Checkov, Gitleaks within Github Action workflows.
-              Managed DevSecOps environment using Docker & Terraform to automate deployment of the dashboard on AWS, leveraging S3 for storage and Lambda for serverless execution. Established secure foundation for CI/CD pipelines and consistent team testing."
-              data-tags="AWS, S3, Lambda, DynamoDB, CloudWatch, Terraform, Docker, OPA, Checkov, Gitleaks, GitHub Actions"
+              data-title="IAM Misconfiguration Dashboard"
+              data-subtitle="INIT Build @ FIU · DevOps Co-Lead · 2025"
+              data-description="Co-led DevOps for a 16-contributor IAM Misconfiguration Dashboard, orchestrating multi-container environments with Docker Compose and reducing developer onboarding time by 60% with one-command setup.
+              <br /><br />Provisioned AWS infrastructure as code with Terraform (Lambda, DynamoDB, S3, API Gateway, OIDC), securing CI/CD deployments via GitHub Actions and enforcing least-privilege IAM policies.
+              <br /><br />Implemented DevSecOps scanning pipeline (OPA, Checkov, Gitleaks) with Makefile automation and integrated Grafana + Prometheus monitoring, cutting manual security review time by 35%."
+              data-tags="Docker Compose, Terraform, AWS Lambda, DynamoDB, S3, API Gateway, GitHub Actions, OPA, Checkov, Gitleaks, Grafana, Prometheus"
               style="--project-banner: url('assets/securityiam.png')"
             >
               <div class="card-visual">
@@ -235,13 +322,6 @@ remediate malware alerts."
 findings using CloudTrail; Hardened IAM with least-privilege policies and S3 controls."
               data-tags="AWS, CloudFormation, GuardDuty, S3, IAM, Security, Triage, JS"
               style="--project-banner: url('https://soyacincau.com/wp-content/uploads/2023/03/230302-AWS-services.jpg')"
-      data-subtitle="Product Engineer"
-              data-description="Redesigned operations tooling with modular widgets, custom charts, and offline-first syncing."
-              data-tags="React,Node.js,Data Viz"
-gs="React,Node.js,Data Viz"
-gs="React,Node.js,Data Viz"
-gs="React,Node.js,Data Viz"
-ags="React,Node.js,Data Viz"
             >
               <div class="card-visual">
                 <img src="https://dt-cdn.net/hub/AWS_GuardDuty_logo.png" alt="guarduty">
@@ -301,6 +381,26 @@ ags="React,Node.js,Data Viz"
               <div class="card-copy">
                 <p class="card-title">Microsoft SC-900: Security, Compliance & Identity</p>
                 <a class="credential-link" href="https://drive.google.com/file/d/1sRPYFzWZwBGR-laRg7hv8vHxNBH7CiR0/view" target="_blank" rel="noreferrer">
+                  Show credential
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </button>
+            <button
+              class="info-card"
+              type="button"
+              data-title="CodePath CYB102 · Blue Team Simulation"
+              data-subtitle="Completed · 2025"
+              data-description="Completed a 10-week SOC analyst program, performing full-lifecycle incident response (triage, containment, recovery) on simulated threats with MITRE ATT&amp;CK framework mapping.
+              <br /><br />Investigated network anomalies and correlated log data using Splunk, Snort, and Wireshark, documenting IOCs and delivering actionable remediation reports."
+              data-tags="SOC, Incident Response, MITRE ATT&CK, Splunk, Snort, Wireshark, Blue Team"
+            >
+              <div class="card-visual">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdHoU-4DH0k17RCxzpPvBdZSLJTwQRnik_pQ&s" alt="CodePath logo" />
+              </div>
+              <div class="card-copy">
+                <p class="card-title">CodePath CYB102: Cybersecurity</p>
+                <a class="credential-link" href="https://www.codepath.org/" target="_blank" rel="noreferrer">
                   Show credential
                   <span aria-hidden="true">↗</span>
                 </a>

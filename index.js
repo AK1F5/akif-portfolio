@@ -201,4 +201,31 @@ document.addEventListener('DOMContentLoaded', () => {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  /* Scroll-in animations */
+  if (!reduceMotion.matches) {
+    const sections = document.querySelectorAll('.section-heading, .skill-group, .about-card');
+    const cards = document.querySelectorAll('.info-card, .category-card');
+
+    sections.forEach((el) => el.classList.add('fade-in'));
+    cards.forEach((el, i) => {
+      el.classList.add('fade-in-card');
+      el.style.transitionDelay = `${i % 4 * 0.1}s`;
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    sections.forEach((el) => observer.observe(el));
+    cards.forEach((el) => observer.observe(el));
+  }
 });
